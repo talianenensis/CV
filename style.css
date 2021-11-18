@@ -3,7 +3,7 @@ h1 {
   font-size: 20px;
   font-style: italic;
   text-align: right;
-  padding: 10px 10px 7px 3px;
+  padding: 10px 30px 7px 3px;
   font-family: 'Zilla Slab', serif;
   margin: 0;
 }
@@ -14,11 +14,10 @@ body {
   font-family: 'Zilla Slab', serif;
   color: rgb(27, 27, 27);
   padding: 0;
-  position: relative;
 }
 
 .portret {
-  height: 200px; 
+  height: 199px; 
   margin: 0;
   padding: 0;
   object-fit: cover;
@@ -26,9 +25,9 @@ body {
 
 
 .hlavicka {
-  background-image: linear-gradient(rgb(34, 167, 240, 1), rgba(187, 183, 183, 0.075));
+  background-image: linear-gradient(rgb(34, 167, 240, 1), white 30%);
   margin: 50px 0px 0 0;
-  padding: 0 10px 0 0;
+  padding: 0;
 }
 
 .hlavicka {
@@ -37,12 +36,13 @@ body {
 }
  
 .foto{
-  flex: 1 1 30%;
+  flex: 0 1 30%;
 }
 
 .kontakt-menu {
   flex: 1 1 70%;
 }
+
 a {
   color:black;
   font-style: italic;
@@ -57,23 +57,25 @@ a {
 
 .menu li {
   display:block;
-  padding: 0;
-}
-
-.menu a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
   font-weight: 700;
   padding: 7.5px 5px;
   font-size: 14px; 
 }
 
-.menu a:hover,
-.menu a:focus,
-.menu a:active {
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.tab1:hover,
+.tab2:hover,
+.tab3:hover,
+.tab4:hover {
   background-color: white;
-  color: rgba(34, 168, 240, 0.692)
+  color: rgba(34, 168, 240, 0.692);
+  padding: 7.5px 5px;
+  display: block;
 }
 
 .kontakt {
@@ -100,30 +102,18 @@ a {
   margin: 5px 0 5px 0;
 }
 
+.zahlavi {
+  display: flex;
+  justify-content: space-between;
+}
+
 .arrow  {
-  width: 30px;
-  position: absolute;
-  right: 50px;
-  bottom: 1043px;
+  width: 25px;
+  padding: 10px 20px 0 0;
+  margin: 0;
 }
 
-.arrow2  {
-  width: 30px;
-  position: absolute;
-  right: 50px;
-  bottom: 765px;
-}
-
-.arrow3  {
-  width: 30px;
-  position: absolute;
-  right: 50px;
-  bottom: 603px;
-}
-
-.arrow:hover,
-.arrow2:hover,
-.arrow3:hover{
+.arrow:hover {
   border-radius: 50%;
   border: 2px solid rgba(34, 168, 240, 0.692);
 }
@@ -180,9 +170,9 @@ table {
 
 .rok2 {
   text-align: left;
-  padding: 10px 10px 0 30px;
+  padding: 10px 10px 0 15px;
   font-weight: 600;
-  margin: 10px 10px 0 20px;
+  margin: 10px 0 0 20px;
 }
 
 .rok3 {
@@ -217,8 +207,7 @@ table {
 
 @media screen and (min-width: 640px) {
   .portret {
-    height: 155px; 
-    padding: 0 20px 0 0;
+    padding: 0;
     margin: 0;
   }
 
@@ -230,6 +219,126 @@ table {
     text-align: right;
   }
   .kontakt {
-    padding: 0 5px 0 0;
+    padding: 10px 50px 15px 0;
     font-size: 12px;
   }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 0;
+    width: 75vw;
+  }
+
+  .hlavicka {
+    background-image: linear-gradient(rgb(34, 167, 240, 1), white 60%);
+  }
+
+  .foto {
+    flex: 1 1 25vw;
+  }
+
+  .kontakt-menu {
+    flex: 1 1 75vw;
+  }
+
+  .tab1:hover,
+  .tab2:hover,
+  .tab3:hover,
+  .tab4:hover {
+    background-color: white;
+    color: rgba(34, 168, 240, 0.692);
+    display: inline-block;
+    margin: 0;
+    height: fit-content; 
+  }
+
+  h1 {
+    font-size: 26px;
+    padding: 10px 100px 0 0;
+  }
+
+  .kontakt {
+    font-size: 16px;
+    padding: 0px 50px 2px 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+
+  .menu li {
+    padding: 10px 5px;
+    font-size: 16px; 
+  }
+  
+ 
+  .udaje,
+  .praxe, 
+  .vzdelani,
+  .jazyk,
+  .ostatni {
+
+    width: 30%;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+  }
+
+  
+  .duties li {
+    font-size: 14px;
+  }
+  
+  li {
+    font-size: 14px;
+  }
+  
+  h4 {
+    font-size: 14px;
+  }
+  
+  td {
+    margin: 10px 10px 0 10px;
+  }
+  
+  tr {
+    margin: 5px 0 10px 0;
+  }
+  
+  .tytul {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  
+  .rok2 {
+    font-size: 15px;
+  }
+  
+  .rok3 {
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 30px 10px 20px;
+    margin: 0 100px 0 0;
+  }
+  
+  .rok {
+    padding: 5px 60px 10px 10px;
+    font-size: 15px;
+  }
+
+  .paticka p {
+    font-size: 18px;
+
+  }
+
+
+}
