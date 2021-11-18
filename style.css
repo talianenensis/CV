@@ -19,7 +19,7 @@ body {
 
 .portret {
   float: left;
-  height: 156px; 
+  height: 157.5px; 
   margin: 1px;
   padding: 0;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 a {
-  color: rgb(9, 111, 129);
+  color: white;
   font-style: italic;
 }
 
@@ -90,8 +90,29 @@ a {
 .arrow  {
   width: 30px;
   position: absolute;
-  right: 370px;
-  bottom: 965px;
+  right: 50px;
+  bottom: 1073px;
+}
+
+.arrow2  {
+  width: 30px;
+  position: absolute;
+  right: 50px;
+  bottom: 765px;
+}
+
+.arrow3  {
+  width: 30px;
+  position: absolute;
+  right: 50px;
+  bottom: 553px;
+}
+
+.arrow:hover,
+.arrow2:hover,
+.arrow3:hover{
+  border-radius: 50%;
+  border: 2px solid rgba(34, 168, 240, 0.692);
 }
 
 h3 {
