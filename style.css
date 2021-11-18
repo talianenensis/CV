@@ -1,37 +1,50 @@
 h1 {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   text-align: right;
-  padding: 15px 20% 0 20px;
+  padding: 10px 10px 7px 3px;
   font-family: 'Zilla Slab', serif;
   margin: 0;
 }
 
 body {
-  margin: 0 20% 0 10%;
-  font-size: 16px;
+  margin: 0;
+  font-size: 12px;
   font-family: 'Zilla Slab', serif;
   color: rgb(27, 27, 27);
-  padding: 0 20px 0 0 ;
+  padding: 0;
   position: relative;
 }
 
 .portret {
-  float: left;
-  height: 157.5px; 
-  margin: 1px;
+  height: 200px; 
+  margin: 0;
   padding: 0;
+  object-fit: cover;
 }
+
 
 .hlavicka {
   background-image: linear-gradient(rgb(34, 167, 240, 1), rgba(187, 183, 183, 0.075));
   margin: 50px 0px 0 0;
-  padding: 0 50px 0 0;
+  padding: 0 10px 0 0;
 }
 
+.hlavicka {
+  display: flex;
+  align-items: stretch;
+}
+ 
+.foto{
+  flex: 1 1 30%;
+}
+
+.kontakt-menu {
+  flex: 1 1 70%;
+}
 a {
-  color: white;
+  color:black;
   font-style: italic;
 }
 
@@ -43,7 +56,7 @@ a {
 }
 
 .menu li {
-  display:inline-block;
+  display:block;
   padding: 0;
 }
 
@@ -52,8 +65,8 @@ a {
   color: white;
   text-decoration: none;
   font-weight: 700;
-  padding: 10px 10px;
-  font-size: 18px; 
+  padding: 7.5px 5px;
+  font-size: 14px; 
 }
 
 .menu a:hover,
@@ -65,10 +78,10 @@ a {
 
 .kontakt {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   text-align: right;
-  font-weight: 600;
-  padding: 0px 20px 10px 20px;
+  font-weight: 500;
+  padding: 0px 20px 2px 20px;
   margin: 0;
 }
 
@@ -82,8 +95,8 @@ a {
   padding: 5px 10px;
   font-style: italic;
   text-align: center;
-  width: 20%;
-  font-size: 18px;
+  width: 30%;
+  font-size: 13px;
   margin: 5px 0 5px 0;
 }
 
@@ -91,7 +104,7 @@ a {
   width: 30px;
   position: absolute;
   right: 50px;
-  bottom: 1073px;
+  bottom: 1043px;
 }
 
 .arrow2  {
@@ -105,7 +118,7 @@ a {
   width: 30px;
   position: absolute;
   right: 50px;
-  bottom: 553px;
+  bottom: 603px;
 }
 
 .arrow:hover,
@@ -116,36 +129,36 @@ a {
 }
 
 h3 {
-  font-size: 20px;
-  padding: 10px 0 0 70px;
+  font-size: 14px;
+  padding: 10px 0 0 20px;
   margin: 0;
 }
 
 .duties li {
-  font-size: 16px;
-  padding: 0 100px 3px 30px;
+  font-size: 12px;
+  padding: 0 10px 3px 15px;
   margin: 0;
 }
 
 li {
   line-height: 1.1;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0 20px;
 }
 
 h4 {
-  font-size: 16px;
-  padding: 0 0 0 150px;
+  font-size: 12px;
+  padding: 0 0 0 20px;
   margin: 0;
 }
 
 td {
   text-align: left;
-  font-size: 16px;
+  font-size: 12px;
   border-bottom: 1px solid black;
-  padding: 0 20px 0 0;
+  padding: 0 10px 0 0;
   margin: 0 10px 0 10px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 tr {
@@ -154,7 +167,7 @@ tr {
 
 .tytul {
   text-align: left;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0px 0;
   border-bottom: none;
   margin: 0;
@@ -162,27 +175,27 @@ tr {
 
 table {
   border-spacing: 0;
-  padding: 0 50 0 30px;
+  padding: 0 10px 0 10px;
 }
 
 .rok2 {
   text-align: left;
-  padding: 10px 30px 0 30px;
+  padding: 10px 10px 0 30px;
   font-weight: 600;
-  margin: 10px 50px 0 0;
+  margin: 10px 10px 0 20px;
 }
 
 .rok3 {
   text-align: left;
-  padding: 10px 50px 10px 30px;
+  padding: 10px 10px 5px 10px;
   margin: 0 100px 0 0;
 }
 
 .rok {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 
@@ -196,8 +209,27 @@ table {
   text-align: center;
   padding: 2px 0;
   margin: 2px 0 0 0;
-  font-size: 20px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 600;
   font-family: 'Zilla Slab', serif;
 }
+
+@media screen and (min-width: 640px) {
+  .portret {
+    height: 155px; 
+    padding: 0 20px 0 0;
+    margin: 0;
+  }
+
+  .hlavicka {
+    padding: 0 10px 0 0;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: right;
+  }
+  .kontakt {
+    padding: 0 5px 0 0;
+    font-size: 12px;
+  }
