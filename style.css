@@ -206,6 +206,10 @@ table {
 }
 
 @media screen and (min-width: 640px) {
+
+  body {
+    margin: 20px;
+  }
   .portret {
     padding: 0;
     margin: 0;
@@ -217,33 +221,59 @@ table {
   h1 {
     font-size: 24px;
     text-align: right;
+    margin-right: 100px;
   }
   .kontakt {
-    padding: 10px 50px 15px 0;
+    padding: 0px 50px 10.5px 0;
     font-size: 12px;
+    max-height: 20vh;
+    margin-right: 70px;
   }
 
   .menu {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    height: fit-content;
+    justify-content: center;
     font-size: 16px;
     padding: 5px 0;
-    margin: 0;
     width: 75vw;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
   }
 
   .hlavicka {
     background-image: linear-gradient(rgb(34, 167, 240, 1), white 60%);
+    max-height: 20vh;
+    padding: 0;
+    margin: 0;
   }
 
   .foto {
-    flex: 1 1 25vw;
+
+    flex: 0 1 15vw;
+    height: 15vh;
+  }
+
+  .portret {
+    max-height: 16.6vh; 
+    background-image: url("obrazky/foto.jpg);
+    background-size: cover;
   }
 
   .kontakt-menu {
-    flex: 1 1 75vw;
+    flex: 0 1 85vw;
+    max-height: 20vh;
+  }
+
+  .tab1,
+  .tab2,
+  .tab3,
+  .tab4 {
+    flex: 1 1 25%;
+    padding: 0 100px;
   }
 
   .tab1:hover,
@@ -264,7 +294,7 @@ table {
 
   .kontakt {
     font-size: 16px;
-    padding: 0px 50px 2px 20px;
+    padding: 0 100px 2px 20px;
   }
 
   h3 {
@@ -342,3 +372,119 @@ table {
 
 
 }
+
+@media screen and (min-width: 1100px) {
+
+  body {
+    margin: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 30px 200px 0 20px;
+  }
+
+  .kontakt {
+    font-size: 17px;
+    padding: 0px 100px 11px 20px;
+  }
+
+  .foto {
+    flex: 0 1 20vw;
+    max-height: 25vh;
+  }
+  .portret {
+    max-height: 23vh;
+  }
+
+  .kontakt-menu {
+    flex: 1 1 75vw;
+    max-height: 25vh;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+    font-size: 18px; 
+  }
+
+  .hlavicka {
+    max-height: 25vh;
+  }
+
+  .menu {
+  max-width: 74.5vw;
+  }
+
+  .udaje,
+  .praxe, 
+  .vzdelani,
+  .jazyk,
+  .ostatni {
+
+    width: 30%;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+  }
+
+
+  .duties li {
+    font-size: 16px;
+    margin-left: 50px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  td {
+    margin: 15px 15px 0 15px;
+  }
+
+  tr {
+    margin: 10px 0 15px 30px;
+  }
+
+  .tytul {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+
+  .rok2 {
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .rok3 {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 40px 20px 30px;
+    margin: 0 100px 0 0;
+  }
+
+  .rok {
+    padding: 5px 60px 10px 70px;
+    font-size: 17px;
+  }
+
+  .paticka p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+
