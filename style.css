@@ -17,10 +17,17 @@ body {
 }
 
 .portret {
-  height: 199px; 
+  height: 130px; 
   margin: 0;
   padding: 0;
   object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px grey;
 }
 
 
@@ -28,20 +35,9 @@ body {
   background-image: linear-gradient(rgb(34, 167, 240, 1), white 30%);
   margin: 50px 0px 0 0;
   padding: 0;
+  position: relative;
 }
 
-.hlavicka {
-  display: flex;
-  align-items: stretch;
-}
- 
-.foto{
-  flex: 0 1 30%;
-}
-
-.kontakt-menu {
-  flex: 1 1 70%;
-}
 
 a {
   color:black;
