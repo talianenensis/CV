@@ -1,5 +1,9 @@
+html {
+  padding-top: 0;
+}
+
 h1 {
-  color: white;
+  color: black;
   font-size: 20px;
   font-style: italic;
   text-align: right;
@@ -9,7 +13,7 @@ h1 {
 }
 
 body {
-  margin: 8px;
+  margin: 3px;
   font-size: 12px;
   font-family: 'Zilla Slab', serif;
   color: rgb(27, 27, 27);
@@ -33,7 +37,7 @@ body {
 
 .hlavicka {
   background-image: linear-gradient(rgb(34, 167, 240, 1), white 30%);
-  margin: 50px 0px 0 0;
+  margin: 0;
   padding: 0;
   position: relative;
 }
@@ -46,7 +50,7 @@ a {
 
 .menu {
   margin: 0;
-  padding-left: 100px;
+  padding-left: 130px;
   text-align: center;
   background-color: rgba(34, 168, 240, 0.692);
 }
