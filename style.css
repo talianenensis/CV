@@ -24,7 +24,7 @@ body {
   border-radius: 50%;
   float: left;
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 30px;
   border: 2px solid white;
   box-shadow: 2px 2px 5px grey;
