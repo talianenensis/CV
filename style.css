@@ -7,7 +7,7 @@ h1 {
   font-size: 20px;
   font-style: italic;
   text-align: right;
-  padding: 10px 30px 7px 3px;
+  padding: 10px 50px 7px 3px;
   font-family: 'Zilla Slab', serif;
   margin: 0;
 }
@@ -43,8 +43,9 @@ body {
 
 
 a {
-  color:black;
+  color:var(--primary);
   font-style: italic;
+  font-weight: 700;
 }
 
 .menu {
@@ -57,31 +58,31 @@ a {
 .menu li {
   display:block;
   font-weight: 700;
-  padding: 7.5px 5px;
   font-size: 17px; 
 }
 
-.menu a {
+.tab1,
+.tab2,
+.tab3,
+.tab4 {
   display: inline-block;
   text-decoration: none;
   color: black;
+  padding: 7.5px 5px;
 }
 
 .tab1:hover,
 .tab2:hover,
 .tab3:hover,
 .tab4:hover {
-  background-color: white;
-  color: black;
-  padding: 7.5px 5px;
-  display: block;
+  transform: scale(1.2);
 }
 
 .kontakt {
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0px 20px 2px 20px;
   margin: 0;
 }
@@ -210,75 +211,59 @@ table {
   }
 
   .portret {
-    height: 150px;
+    height: 140px;
     padding: 0;
-    margin: 0 0 0 20px;
+    margin: 0;
     float: left;
+    left: 10px;
+    top: 0px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 26px;
     text-align: right;
-    margin-right: 70px;
+    margin-right: 20px;
+    padding: 0 50px 20px 0;
+    color: black;
   }
 
   .kontakt {
-    padding: 0px 50px 10.5px 0;
-    font-size: 11px;
+    padding: 0px 20px 0 0;
+    font-size: 16px;
     max-height: 20vh;
-    margin-right: 70px;
+    margin-bottom: 20px;
   }
 
   .menu {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    padding: 5px 0;
-    width: 75vw;
+    padding: 0 0 0 80px;
+    width: 85vw;
   }
 
-  .menu ul {
-    margin: 0;
-    padding: 0;
+  .menu li {
+    display: inline-block;
   }
-
-  .hlavicka {
-    max-height: 20vh;
-    padding: 0;
-    margin: 0;
-  }
-
 
   .tab1,
   .tab2,
   .tab3,
   .tab4 {
-    flex: 1 1 25%;
-    padding: 0 100px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
   }
 
   .tab1:hover,
   .tab2:hover,
   .tab3:hover,
   .tab4:hover {
-    background-color: white;
-    color: rgba(34, 168, 240, 0.692);
-    display: inline-block;
-    margin: 0;
-    height: fit-content; 
-  }
+    display: block;
+}
 
-  h1 {
-    font-size: 26px;
-    padding: 10px 100px 0 0;
-  }
-
-  .kontakt {
-    font-size: 16px;
-    padding: 0 100px 2px 20px;
-  }
-
+  
   h3 {
     font-size: 16px;
   }
@@ -304,6 +289,9 @@ table {
     margin: 10px 0 10px 0;
   }
 
+  .arrow  {
+    width: 12px;
+  }
   
   .duties li {
     font-size: 14px;
@@ -358,34 +346,27 @@ table {
 @media screen and (min-width: 1100px) {
 
   body {
-    margin: 50px;
+    margin: 50px 100px;
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 35px;
     padding: 30px 200px 0 20px;
   }
 
   .kontakt {
-    font-size: 17px;
+    font-size: 20px;
     padding: 0px 100px 11px 20px;
   }
 
-  .foto {
-    flex: 0 1 20vw;
-    max-height: 25vh;
-  }
   .portret {
-    max-height: 23vh;
+    height: 200px;
+    left: 50px;
   }
 
-  .kontakt-menu {
-    flex: 1 1 75vw;
-    max-height: 25vh;
-  }
 
   h3 {
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 30px;
   }
 
@@ -395,15 +376,12 @@ table {
 
   .menu li {
     padding: 15px 10px;
-    font-size: 18px; 
-  }
-
-  .hlavicka {
-    max-height: 25vh;
+    font-size: 24px; 
   }
 
   .menu {
-  max-width: 74.5vw;
+  max-width: 77vw;
+  padding: 0 0 0 130px;
   }
 
   .udaje,
@@ -413,22 +391,22 @@ table {
   .ostatni {
 
     width: 30%;
-    font-size: 18px;
+    font-size: 24px;
     margin: 10px 0 20px 0;
   }
 
 
   .duties li {
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 50px;
   }
 
   li {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   td {
@@ -440,19 +418,19 @@ table {
   }
 
   .tytul {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 0;
   }
 
 
   .rok2 {
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .rok3 {
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     padding: 10px 40px 20px 30px;
     margin: 0 100px 0 0;
@@ -460,7 +438,7 @@ table {
 
   .rok {
     padding: 5px 60px 10px 70px;
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .paticka p {
